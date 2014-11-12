@@ -13,6 +13,9 @@ namespace Wheels\Tests\Fixtures;
 
 use Wheels\CommandInterface;
 
+/**
+ * Foobar command
+ */
 class FoobarCommand implements CommandInterface
 {
 }

@@ -13,8 +13,14 @@ namespace Wheels\Tests;
 
 use Wheels\Resolver\ClassNameResolver;
 
+/**
+ * ClassNameResolver test
+ */
 class ClassNameResolverTest extends \PHPUnit_Framework_TestCase
 {
+    /**
+     * Test the resolver return the right handler
+     */
     public function testGetHandler()
     {
         $resolver = new ClassNameResolver();
@@ -24,6 +30,9 @@ class ClassNameResolverTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf('Wheels\Tests\Fixtures\FoobarCommandHandler', $handler);
     }
 
+    /**
+     * Test the resolver return null if no handler found
+     */
     public function testHandlerNotFound()
     {
         $resolver = new ClassNameResolver();

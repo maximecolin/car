@@ -11,7 +11,15 @@
 
 namespace Wheels;
 
+/**
+ * Command handler interface
+ */
 interface CommandHandlerInterface
 {
+    /**
+     * Handle a command
+     *
+     * @param \Wheels\CommandInterface $command
+     */
     public function handle(CommandInterface $command);
 }

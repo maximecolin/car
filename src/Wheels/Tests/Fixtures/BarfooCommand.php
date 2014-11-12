@@ -13,6 +13,9 @@ namespace Wheels\Tests\Fixtures;
 
 use Wheels\CommandInterface;
 
+/**
+ * Barfoo command
+ */
 class BarfooCommand implements CommandInterface
 {
 }

@@ -11,6 +11,9 @@
 
 namespace Wheels;
 
+/**
+ * Command interface
+ */
 interface CommandInterface
 {
 }

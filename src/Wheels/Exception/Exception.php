@@ -11,6 +11,9 @@
 
 namespace Wheels\Exception;
 
+/**
+ * Wheels exception
+ */
 class Exception extends \Exception
 {
 }

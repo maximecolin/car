@@ -11,6 +11,9 @@
 
 namespace Wheels\Exception;
 
+/**
+ * No handler found exception
+ */
 class NoHandlerFoundException extends Exception
 {
 }

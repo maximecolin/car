@@ -13,7 +13,16 @@ namespace Wheels\Resolver;
 
 use Wheels\CommandInterface;
 
+/**
+ * Get handler for a command
+ */
 interface ResolverInterface
 {
+    /**
+     * Get handler
+     *
+     * @param \Wheels\CommandInterface $command
+     * @return \Wheels\CommandHandlerInterface
+     */
     public function getHandler(CommandInterface $command);
 }

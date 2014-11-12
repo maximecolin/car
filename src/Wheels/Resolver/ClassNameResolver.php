@@ -13,8 +13,14 @@ namespace Wheels\Resolver;
 
 use Wheels\CommandInterface;
 
+/**
+ * Resolve handler class name from the command class name
+ */
 class ClassNameResolver implements ResolverInterface
 {
+    /**
+     * {@inheritdoc}
+     */
     public function getHandler(CommandInterface $command)
     {
         $class = sprintf('%sHandler', get_class($command));

@@ -14,8 +14,14 @@ namespace Wheels\Tests;
 use Wheels\CommandBus;
 use Wheels\Resolver\ClassNameResolver;
 
+/**
+ * CommandBus test
+ */
 class CommandBusTest extends \PHPUnit_Framework_TestCase
 {
+    /**
+     * Test command execution
+     */
     public function testExecute()
     {
         $bus = new CommandBus();
@@ -26,6 +32,9 @@ class CommandBusTest extends \PHPUnit_Framework_TestCase
         $bus->execute($command);
     }
 
+    /**
+     * Test the bus throw an exception if no handler found
+     */
     public function testNoHandlerFoundException()
     {
         $this->setExpectedException('Wheels\Exception\NoHandlerFoundException');

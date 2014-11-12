@@ -14,6 +14,9 @@ namespace Wheels\Tests\Fixtures;
 use Wheels\CommandInterface;
 use Wheels\CommandHandlerInterface;
 
+/**
+ * Foobar command handler
+ */
 class FoobarCommandHandler implements CommandHandlerInterface
 {
     public function handle(CommandInterface $command)
