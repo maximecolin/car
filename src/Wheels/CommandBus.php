@@ -16,9 +16,14 @@ use Wheels\Exception\NoHandlerFoundException;
 
 class CommandBus
 {
-    private $resolvers = array();
+    private $resolvers;
 
-    public function execute($command)
+    public function __construct()
+    {
+        $this->resolvers = new \SplPriorityQueue();
+    }
+
+    public function execute(CommandInterface $command)
     {
         return $this->getHandler($command)->handle($command);
     }
@@ -38,6 +43,6 @@ class CommandBus
 
     public function addResolver(ResolverInterface $resolver, $priority = 0)
     {
-        $this->resolvers[] = $resolver;
+        $this->resolvers->insert($resolver, $priority);
     }
 }
