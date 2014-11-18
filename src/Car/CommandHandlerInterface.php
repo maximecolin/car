@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Wheels package.
+ * This file is part of the Car package.
  *
  * (c) Maxime Colin <contact@maximecolin.fr>
  *
@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Wheels;
+namespace Car;
 
 /**
  * Command handler interface
@@ -19,7 +19,7 @@ interface CommandHandlerInterface
     /**
      * Handle a command
      *
-     * @param \Wheels\CommandInterface $command
+     * @param \Car\CommandInterface $command
      */
     public function handle(CommandInterface $command);
 }

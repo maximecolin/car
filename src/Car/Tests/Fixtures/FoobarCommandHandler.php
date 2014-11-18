@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Wheels package.
+ * This file is part of the Car package.
  *
  * (c) Maxime Colin <contact@maximecolin.fr>
  *
@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Wheels\Tests\Fixtures;
+namespace Car\Tests\Fixtures;
 
-use Wheels\CommandInterface;
-use Wheels\CommandHandlerInterface;
+use Car\CommandInterface;
+use Car\CommandHandlerInterface;
 
 /**
  * Foobar command handler

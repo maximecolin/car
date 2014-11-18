@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Wheels package.
+ * This file is part of the Car package.
  *
  * (c) Maxime Colin <contact@maximecolin.fr>
  *
@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Wheels\Tests\Fixtures;
+namespace Car\Tests\Fixtures;
 
-use Wheels\CommandInterface;
+use Car\CommandInterface;
 
 /**
- * Barfoo command
+ * Foobar command
  */
-class BarfooCommand implements CommandInterface
+class FoobarCommand implements CommandInterface
 {
 }

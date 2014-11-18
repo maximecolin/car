@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Wheels package.
+ * This file is part of the Car package.
  *
  * (c) Maxime Colin <contact@maximecolin.fr>
  *
@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Wheels;
+namespace Car;
 
-use Wheels\Resolver\ResolverInterface;
-use Wheels\Exception\NoHandlerFoundException;
+use Car\Resolver\ResolverInterface;
+use Car\Exception\NoHandlerFoundException;
 
 /**
  * Command bus
@@ -32,7 +32,7 @@ class CommandBus
     /**
      * Execute a command
      *
-     * @param \Wheels\CommandInterface $command
+     * @param \Car\CommandInterface $command
      * @return type
      */
     public function execute(CommandInterface $command)
@@ -43,8 +43,8 @@ class CommandBus
     /**
      * Get the handler matching a command
      *
-     * @param \Wheels\CommandInterface $command
-     * @return \Wheels\CommandHandlerInterface
+     * @param \Car\CommandInterface $command
+     * @return \Car\CommandHandlerInterface
      * @throws NoHandlerFoundException
      */
     private function getHandler(CommandInterface $command)
@@ -63,7 +63,7 @@ class CommandBus
     /**
      * Add a handler resolver
      *
-     * @param \Wheels\Resolver\ResolverInterface $resolver
+     * @param \Car\Resolver\ResolverInterface $resolver
      * @param type $priority
      */
     public function addResolver(ResolverInterface $resolver, $priority = 0)

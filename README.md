@@ -1,8 +1,8 @@
-#Wheels
+#Car
 
-Wheels is a PHP implementation of the Command Bus pattern for DDD.
+Car is a PHP implementation of the Command Bus pattern for DDD.
 
-[![Build Status](https://travis-ci.org/maximecolin/wheels.svg)](https://travis-ci.org/maximecolin/wheels)
+[![Build Status](https://travis-ci.org/maximecolin/car.svg)](https://travis-ci.org/maximecolin/car)
 
 ##Disclaimer
 
@@ -11,7 +11,7 @@ This is a very basic and simple implementation. It has to grow up :)
 ##Installation
 
 ```
-composer require maximecolin/wheels
+composer require maximecolin/car
 ```
 
 ##Purpose

@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Wheels package.
+ * This file is part of the Car package.
  *
  * (c) Maxime Colin <contact@maximecolin.fr>
  *
@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Wheels\Tests;
+namespace Car\Tests;
 
-use Wheels\Resolver\ClassNameResolver;
+use Car\Resolver\ClassNameResolver;
 
 /**
  * ClassNameResolver test
@@ -27,7 +27,7 @@ class ClassNameResolverTest extends \PHPUnit_Framework_TestCase
         $command  = new Fixtures\FoobarCommand();
         $handler  = $resolver->getHandler($command);
 
-        $this->assertInstanceOf('Wheels\Tests\Fixtures\FoobarCommandHandler', $handler);
+        $this->assertInstanceOf('Car\Tests\Fixtures\FoobarCommandHandler', $handler);
     }
 
     /**

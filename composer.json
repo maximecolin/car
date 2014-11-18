@@ -1,5 +1,5 @@
 {
-    "name": "maximecolin/wheels",
+    "name": "maximecolin/car",
     "type": "library",
     "version": "1.0.0",
     "description": "A PHP implementation of the command bus pattern for DDD",
@@ -19,6 +19,6 @@
         "phpunit/phpunit": "4.3.*"
     },
     "autoload": {
-        "psr-0": { "Wheels": "src/" }
+        "psr-0": { "Car": "src/" }
     }
 }

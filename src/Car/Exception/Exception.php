@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Wheels package.
+ * This file is part of the Car package.
  *
  * (c) Maxime Colin <contact@maximecolin.fr>
  *
@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Wheels\Exception;
+namespace Car\Exception;
 
 /**
- * No handler found exception
+ * Car exception
  */
-class NoHandlerFoundException extends Exception
+class Exception extends \Exception
 {
 }

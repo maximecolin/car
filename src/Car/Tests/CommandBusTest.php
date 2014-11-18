@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Wheels package.
+ * This file is part of the Car package.
  *
  * (c) Maxime Colin <contact@maximecolin.fr>
  *
@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Wheels\Tests;
+namespace Car\Tests;
 
-use Wheels\CommandBus;
-use Wheels\Resolver\ClassNameResolver;
+use Car\CommandBus;
+use Car\Resolver\ClassNameResolver;
 
 /**
  * CommandBus test
@@ -37,7 +37,7 @@ class CommandBusTest extends \PHPUnit_Framework_TestCase
      */
     public function testNoHandlerFoundException()
     {
-        $this->setExpectedException('Wheels\Exception\NoHandlerFoundException');
+        $this->setExpectedException('Car\Exception\NoHandlerFoundException');
 
         $bus = new CommandBus();
 

@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Wheels package.
+ * This file is part of the Car package.
  *
  * (c) Maxime Colin <contact@maximecolin.fr>
  *
@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Wheels\Resolver;
+namespace Car\Resolver;
 
-use Wheels\CommandInterface;
+use Car\CommandInterface;
 
 /**
  * Resolve handler class name from the command class name
