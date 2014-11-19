@@ -51,7 +51,7 @@ class CreateCommandHandler implements CommandHandlerInterface
 
 
 ```
-// Usualy, have a service to get the bus
+// Usually, have a service to get the bus
 $bus = new CommandBus();
 $bus->addResolver(new ClassNameResolver());
 
