@@ -20,7 +20,7 @@ The aim of the command bus pattern is to isolate your domain code in atomic, tes
 
 ##Usage
 
-Create a command class to handle data you need. Attributes can be set on contruct, fill through a form, set by other services, ...
+A command is an order. It can contains data you need. Attributes can be set on construct, fill through a form, set by other services, ...
 
 ```
 class CreateArticleCommand implements CommandInterface
