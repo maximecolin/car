@@ -22,7 +22,7 @@ The aim of the command bus pattern is to isolate your domain code in atomic, tes
 
 A command is an order. It can contains data you need. Attributes can be set on construct, fill through a form, set by other services, ...
 
-```
+```php
 class CreateArticleCommand implements CommandInterface
 {
 	public $title;
@@ -38,7 +38,7 @@ class CreateArticleCommand implements CommandInterface
 
 Create an handler which will process your command.
 
-```
+```php
 class CreateCommandHandler implements CommandHandlerInterface
 {
 	public function handle(CommandInterface $command)
@@ -50,7 +50,7 @@ class CreateCommandHandler implements CommandHandlerInterface
 
 
 
-```
+```php
 // Usually, have a service to get the bus
 $bus = new CommandBus();
 $bus->addResolver(new ClassNameResolver());
